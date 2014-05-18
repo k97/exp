@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Exp</title>
+
+  <!-- CSS-->
+  <link rel="stylesheet" href="assets/css/app.css">
+
+  <!-- LESS
+  <link rel="stylesheet/less" type="text/less" href="assets/less/app.less" />
+  <script src="js/less/less-1.6.3.min.js"></script>-->
+
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-right panel-reveal">
+      <div class="content-block panelNavigation">
+        <ul>
+          <li><a href="#">
+            <i class="ion ion-home" ></i>
+            <i class="ion ion-ios7-arrow-right pull-right" ></i>
+            Home</a></li>
+
+            <li><a href="#">
+              <i class="ion ion-ios7-pie-outline" ></i><i class="ion ion-ios7-arrow-right pull-right" ></i>Graphs
+            </a></li>
+
+            <li><a href="#">
+              <i class="ion ion-ios7-calendar-outline" ></i><i class="ion ion-ios7-arrow-right pull-right" ></i>Month List
+            </a></li>
+
+            <li><a href="#">
+              <i class="ion ion-ios7-gear-outline" ></i><i class="ion ion-ios7-arrow-right pull-right" ></i>Settings
+            </a></li>
+
+            <li><a href="#">
+              <i class="ion ion-ios7-information-outline" ></i><i class="ion ion-ios7-arrow-right pull-right" ></i>Help
+            </a></li>
+          </ul>
+      </div>
+    </div><!--/panel-left-->
+
+
+
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+               <a href="form.html" class="link">
+                <i class="ion ion-ios7-plus-empty"></i>
+              </a>
+            </div>
+            <!-- We have home navbar without left link-->
+            <div class="center sliding"></div>
+
+            <div class="right">
+              <a href="#" class="link open-panel">
+                <i class="ion ion-navicon pull-left"></i>
+              </a>
+            </div>
+
+          </div>
+        </div><!--/navbar-->
+
+
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages  toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title" id="monthInfo">
+                May 2014
+              </div>
+              <div class="content-block-title">
+
+                <div id="expSumAmt">
+                 <span>123456.12</span>
+                  <i class="fa fa-rupee"></i>
+                </div>
+              </div>
+
+
+
+              <div class="content-block-title" id="hmListHdr">Expenses</div>
+              <div class="list-block media-list">
+                <ul id="hmExpList">
+                  <li>
+                    <a href="#" class="item-link item-content">
+                      <div class="item-media">
+                        <i class="fa fa-home"></i>
+                      </div>
+
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Yellow Submarine</div>
+                          <div class="item-after">
+                            <i class="fa fa-rupee"></i>
+                            <span>15</span>
+                          </div>
+                        </div>
+
+                        <div class="item-subtitle">Beatles</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="item-link item-content">
+                      <div class="item-media">
+                        <i class="fa fa-fighter-jet"></i>
+                      </div>
+
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Yellow Submarine</div>
+                          <div class="item-after">
+                            <i class="fa fa-rupee"></i>
+                            <span>15</span>
+                          </div>
+                        </div>
+
+                        <div class="item-subtitle">Beatles</div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="item-link item-content">
+                      <div class="item-media">
+                        <i class="fa fa-shopping-cart"></i>
+                      </div>
+
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Yellow Submarine</div>
+                          <div class="item-after">
+                            <i class="fa fa-rupee"></i>
+                            <span>15</span>
+                          </div>
+                        </div>
+
+                        <div class="item-subtitle">Beatles</div>
+                      </div>
+                    </a>
+                  </li>
+                      </ul>
+                    </div>
+
+
+            </div><!--/page-content-->
+          </div><!--/page-->
+        </div><!--/pages-->
+
+
+      </div><!--/view-->
+    </div><!--/views-->
+
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
