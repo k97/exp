@@ -1,2 +1,2 @@
-## Quick start
+## Info
 A simple angular app

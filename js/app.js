@@ -1,18 +1,25 @@
-$(function(){
-    $('#navTrigger').on('click',offCanvasNav);
-});
+/*
+ * Index File Angular
+ * Exp Listing, Month and Total Amount with drill-down linking
+*/
 
-function offCanvasNav(){
-    var nav = $('nav'),
-        navOffsetLeft = nav.offset().left,
-        canvas = $('#offCanvas');
-    if(navOffsetLeft != 0){
-        canvas.addClass('offCanvasShow');
-        nav.addClass('navShow');
-    }
-    else{
-        canvas.removeClass('offCanvasShow');
-        nav.removeClass('navShow');
-    }
+'use strict';
 
-}
+    var expTrackApp = angular.module('expTrackApp', ['ngRoute','expTrackAppCtrl']);
+
+    expTrackApp.config(['$routeProvider',
+      function($routeProvider) {
+        $routeProvider.
+          when('/expenses', {
+            templateUrl: 'templates/main.html',
+            controller: 'ExpListCtrl'
+          }).
+          when('/add', {
+            templateUrl: 'templates/form',
+            controller: 'ExpAdd'
+          }).
+          otherwise({
+            redirectTo: '/expenses'
+          });
+        }]);
+

@@ -1,0 +1,60 @@
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+       <a href="#/add" class="link">
+        <i class="ion ion-ios7-plus-empty"></i>
+      </a>
+    </div>
+    <!-- We have home navbar without left link-->
+    <div class="center sliding"></div>
+
+    <div class="right">
+      <a href="#" class="link open-panel">
+        <i class="ion ion-navicon pull-left"></i>
+      </a>
+    </div>
+
+  </div>
+</div><!--/navbar-->
+
+
+<div id="monthInfo">
+  {{month}} {{year}}
+</div><!--/monthInfo-->
+
+
+<div id="expSumAmt">
+  <span>{{total}}</span>
+  <i class="fa fa-rupee"></i>
+</div><!--/expSumAmt-->
+
+
+
+
+<div class="list-block media-list"  id="hmExpList">
+  <ul>
+    <li  ng-repeat="expense in list">
+      <a href="#" class="item-link item-content">
+        <div class="item-media">
+          <i class="fa {{expense.class}}"></i>
+        </div>
+
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">{{expense.category}}</div>
+            <div class="item-after">
+              <i class="fa fa-rupee"></i>
+              <span>{{expense.amount}}</span>
+            </div>
+          </div>
+
+          <div class="item-subtitle">{{expense.type}}</div>
+        </div>
+      </a>
+    </li>
+
+  </ul>
+</div><!--/list-block-->
+
+

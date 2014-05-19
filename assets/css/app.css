@@ -4862,6 +4862,21 @@ html.with-statusbar-overlay body .panel {
 .fa-dribbble2:before {
   content: "\e063";
 }
+#hmExpList .fa-home {
+  background: #34aadc;
+}
+#hmExpList .fa-truck {
+  background: #ff9500;
+}
+#hmExpList .fa-fighter-jet {
+  background: #ff2d55;
+}
+#hmExpList .fa-user {
+  background: #5856d6;
+}
+#hmExpList .fa-medkit {
+  background: #ff3b30;
+}
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -4880,6 +4895,9 @@ body {
 .navbar a i,
 .navbar a span {
   color: #f7f7f7;
+}
+.navbar a i {
+  font-size: 1.5em;
 }
 .panelNavigation {
   margin: 0;
@@ -4922,17 +4940,18 @@ body {
   color: #f7f7f7;
   text-decoration: none;
 }
-.page-content {
-  padding-top: 2.0em;
-}
 #monthInfo {
+  padding: 1.0em 0 0;
+  margin: 0;
+  text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   font-size: 1.1em;
   color: #8e8e93;
 }
 #expSumAmt {
-  padding-top: 0.1em;
+  margin: 0;
+  padding: 0;
   width: 100%;
   display: inline-block;
   text-align: center;
@@ -4949,38 +4968,41 @@ body {
 #hmListHdr {
   padding-top: 1.2em;
 }
-#hmExpList a .item-media {
+#hmExpList {
+  padding: 0.5em 0 0;
+  margin: 0;
+}
+#hmExpList li a .item-media {
   color: #f7f7f7;
-  background: #ff9500;
+}
+#hmExpList li a .item-media i {
+  display: inline-block;
   width: 50px;
   height: 50px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-}
-#hmExpList a .item-media i {
-  display: inline-block;
-  width: 100%;
   text-align: center;
   font-size: 1.0em;
+  line-height: 3.0em;
 }
-#hmExpList a .item-title {
+#hmExpList li a .item-title {
   font-weight: 400;
   font-size: 0.8em;
 }
-#hmExpList a .item-after span {
+#hmExpList li a .item-after span {
   display: inline-block;
   font-size: 1.15em;
   color: #999999;
 }
-#hmExpList a .item-after i {
+#hmExpList li a .item-after i {
   font-size: 0.8em;
   display: inline-block;
   margin: 0.5em 0.4em 0;
   color: #999999;
 }
-#hmExpList a .item-subtitle {
+#hmExpList li a .item-subtitle {
   font-size: 0.70em;
   text-transform: uppercase;
   color: #8e8e93;

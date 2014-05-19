@@ -1,0 +1,48 @@
+{
+    "month": "March",
+    "year": 2014,
+    "total": 12113,
+
+    "expenses": [
+        {
+            "category": "Home",
+            "type": "Grocery",
+            "amount": "200",
+            "date": "14-03-2014",
+            "class":"fa-home",
+            "notes": "Purchase madefor parents"
+        },
+        {
+            "category": "Vehicle",
+            "type": "Service",
+            "amount": "400",
+            "date": "04-03-2014",
+            "class":"fa-truck",
+            "notes": ""
+        },
+        {
+            "category": "Travel",
+            "type": "long",
+            "amount": "1200",
+            "class":"fa-fighter-jet",
+            "date": "05-03-2014",
+            "notes": ""
+        },
+        {
+            "category": "Personal",
+            "type": "Clothing",
+            "amount": "2400",
+            "class":"fa-user",
+            "date": "18-03-2014",
+            "notes": ""
+        },
+        {
+            "category": "Medical",
+            "type": "Bills",
+            "amount": "250",
+            "class":"fa-medkit",
+            "date": "22-03-2014",
+            "notes": ""
+        }
+    ]
+}

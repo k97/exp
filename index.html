@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="expTrackApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -16,6 +16,7 @@
 
   </head>
   <body>
+
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
 
@@ -58,123 +59,27 @@
       <!-- Your main view, should have "view-main" class-->
       <div class="view view-main">
 
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="left">
-               <a href="form.html" class="link">
-                <i class="ion ion-ios7-plus-empty"></i>
-              </a>
-            </div>
-            <!-- We have home navbar without left link-->
-            <div class="center sliding"></div>
-
-            <div class="right">
-              <a href="#" class="link open-panel">
-                <i class="ion ion-navicon pull-left"></i>
-              </a>
-            </div>
-
-          </div>
-        </div><!--/navbar-->
-
-
-        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages  toolbar-through">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index" class="page">
-            <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="content-block-title" id="monthInfo">
-                May 2014
-              </div>
-              <div class="content-block-title">
-
-                <div id="expSumAmt">
-                 <span>123456.12</span>
-                  <i class="fa fa-rupee"></i>
-                </div>
-              </div>
-
-
-
-              <div class="content-block-title" id="hmListHdr">Expenses</div>
-              <div class="list-block media-list">
-                <ul id="hmExpList">
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-media">
-                        <i class="fa fa-home"></i>
-                      </div>
-
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Yellow Submarine</div>
-                          <div class="item-after">
-                            <i class="fa fa-rupee"></i>
-                            <span>15</span>
-                          </div>
-                        </div>
-
-                        <div class="item-subtitle">Beatles</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-media">
-                        <i class="fa fa-fighter-jet"></i>
-                      </div>
-
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Yellow Submarine</div>
-                          <div class="item-after">
-                            <i class="fa fa-rupee"></i>
-                            <span>15</span>
-                          </div>
-                        </div>
-
-                        <div class="item-subtitle">Beatles</div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-media">
-                        <i class="fa fa-shopping-cart"></i>
-                      </div>
-
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Yellow Submarine</div>
-                          <div class="item-after">
-                            <i class="fa fa-rupee"></i>
-                            <span>15</span>
-                          </div>
-                        </div>
-
-                        <div class="item-subtitle">Beatles</div>
-                      </div>
-                    </a>
-                  </li>
-                      </ul>
-                    </div>
-
-
-            </div><!--/page-content-->
-          </div><!--/page-->
-        </div><!--/pages-->
-
+        <!-- Angular Routing View-->
+         <div ng-view></div>
 
       </div><!--/view-->
     </div><!--/views-->
 
 
-    <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="js/framework7.js"></script>
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
+    <!-- Framework7 Library JS
+    <script src="js/framework7/framework7.js"></script>
+    <script src="js/framework7-custm.js"></script>-->
+
+
+    <!-- Angular JS-->
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-route.min.js"></script>
+
+
+    <!--Path to App Files-->
+    <script src="js/app.js"></script>
+    <script src="js/ctrl.js"></script>
+
+
   </body>
 </html>
