@@ -1,25 +1,30 @@
 /*
- * Index File Angular
- * Exp Listing, Month and Total Amount with drill-down linking
+ * Routing & Control
+ * App Main File
 */
 
 'use strict';
 
-    var expTrackApp = angular.module('expTrackApp', ['ngRoute','expTrackAppCtrl']);
+var expApp = angular.module('expApp', ['ngRoute','expAppCtrl','expServices']);
 
-    expTrackApp.config(['$routeProvider',
-      function($routeProvider) {
+expApp.config(['$routeProvider',
+    function($routeProvider) {
         $routeProvider.
-          when('/expenses', {
+        when('/expenses', {
             templateUrl: 'templates/main.html',
             controller: 'ExpListCtrl'
-          }).
-          when('/add', {
-            templateUrl: 'templates/form',
+        }).
+        when('/add', {
+            templateUrl: 'templates/form.html',
             controller: 'ExpAdd'
-          }).
-          otherwise({
+        }).
+        when('/category', {
+            templateUrl: 'templates/category.html',
+            controller: 'ExpCategory'
+        }).
+        otherwise({
             redirectTo: '/expenses'
-          });
-        }]);
+        });
+    }
+]);
 

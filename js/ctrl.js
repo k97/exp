@@ -1,28 +1,25 @@
 /*
- * Index File Angular
+ * Angular Controller & Modal Logics
  * Exp Listing, Month and Total Amount with drill-down linking
 */
-
 'use strict';
 
-/* Controllers */
-var expTrackAppCtrl = angular.module('expTrackAppCtrl', []);
+var expAppCtrl = angular.module('expAppCtrl', []);
 
 //-------Main Index Page Data
-expTrackAppCtrl.controller('ExpListCtrl', ['$scope', '$http',
-    function($scope, $http) {
-        $http.get('data/explist.json').success(function(data) {
-            $scope.month = data.month;
-            $scope.year = data.year;
-            $scope.total = data.total;
-            $scope.list = data.expenses;
-        });
+expAppCtrl.controller('ExpListCtrl', ['$scope', 'ExpCall',
+    function($scope, ExpCall) {
+            $scope.expense = ExpCall.query();
+            $scope.expense = "month";
+            // $scope.year = expCall.query();
+            // $scope.total = expCall.query();
+             $scope.list = "expenses";
+
     }
 ]);
 
 
 //------Add Form Data
-
 // expTrackAppCtrl.controller('ExpAdd', ['$scope', '$routeParams',
 //   function($scope, $routeParams) {
 //     $scope.phoneId = $routeParams.phoneId;
