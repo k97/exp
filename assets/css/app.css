@@ -4878,7 +4878,7 @@ html.with-statusbar-overlay body .panel {
   background: #ff3b30;
 }
 html body {
-  overflow: scroll;
+  overflow-y: scroll;
 }
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
