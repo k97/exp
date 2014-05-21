@@ -32,9 +32,9 @@
 
 
 
-<div class="list-block media-list"  id="hmExpList">
+<div class="container list-block media-list"  id="hmExpList">
   <ul>
-    <li  ng-repeat="expense in list">
+    <li ng-repeat="expense in list">
       <a href="#" class="item-link item-content">
         <div class="item-media">
           <i class="fa {{expense.class}}"></i>
@@ -45,7 +45,7 @@
             <div class="item-title">{{expense.category}}</div>
             <div class="item-after">
               <i class="fa fa-rupee"></i>
-              <span>{{expense.amount}}</span>
+              <span>{{(expense.amount).toFixed(2)}}</span>
             </div>
           </div>
 

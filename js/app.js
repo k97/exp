@@ -15,8 +15,7 @@ expApp.config(['$routeProvider',
             controller: 'ExpListCtrl'
         }).
         when('/add', {
-            templateUrl: 'templates/form.html',
-            controller: 'ExpAdd'
+            templateUrl: 'templates/form.html'
         }).
         when('/category', {
             templateUrl: 'templates/category.html',

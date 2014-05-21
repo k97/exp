@@ -1,0 +1,18 @@
+{
+    "home": [
+        "Food",
+        "Grocery",
+        "Medicine",
+        "Rent & Mortgage"
+    ],
+    "personal": [
+        "Food",
+        "Travel",
+        "Leisure",
+        "Clothing"
+    ],
+    "vehicle": [
+        "Fuel",
+        "Service"
+    ]
+}

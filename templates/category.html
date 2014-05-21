@@ -10,8 +10,8 @@
 
     <div class="center sliding">Select Category</div>
     <div class="right">
-       <a href="addCategory.html" class="link">
-        <i class="ion ion-ios7-plus-empty"></i>
+       <a href="#/expenses" class="link">
+        <i class="ion ion-ios7-checkmark-empty"></i><span>Done</span>
       </a>
   </div>
   </div>
@@ -19,152 +19,25 @@
 
 
     <!-- Scrollable page content-->
-    <div id="expCategory">
+    <div id="expCategory" class="container">
 
       <!-- ****************************** HOME ****************************** -->
-
-      <div class="content-block-title">Home</div>
-      <div class="list-block">
-        <ul>
-          <li>
+      <div ng-repeat="(key,value) in category">
+      <div class="content-block-title" >{{key}}</div>
+       <div class="list-block">
+        <ul >
+          <li ng-repeat="(k,v) in value">
             <label class="label-checkbox item-content">
               <input type="radio" name="ks-radio" value="Books" checked="checked"/>
               <div class="item-media">
                 <i class="icon icon-form-checkbox"></i>
               </div>
               <div class="item-inner">
-                <div class="item-title">Food</div>
+                <div class="item-title">{{v}}</div>
               </div>
             </label>
           </li>
-
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Grocery</div>
-              </div>
-            </label>
-          </li>
-
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Medicine</div>
-              </div>
-            </label>
-          </li>
-
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Rent & Mortgage</div>
-              </div>
-            </label>
-          </li>
-
-        </ul>
-      </div><!--/list-block-->
-
-      <!-- ****************************** Personal ****************************** -->
-      <div class="content-block-title">Personal</div>
-      <div class="list-block">
-        <ul>
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Food</div>
-              </div>
-            </label>
-          </li>
-
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Travel</div>
-              </div>
-            </label>
-          </li>
-
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Leisure</div>
-              </div>
-            </label>
-          </li>
-
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Clothing</div>
-              </div>
-            </label>
-          </li>
-
-
-
-        </ul>
-      </div><!--/list-block-->
-
-      <!-- ****************************** Vehicle ****************************** -->
-      <div class="content-block-title">Vehicle</div>
-      <div class="list-block">
-        <ul>
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Fuel</div>
-              </div>
-            </label>
-          </li>
-
-          <li>
-            <label class="label-checkbox item-content">
-              <input type="radio" name="ks-radio" value="Books" checked="checked"/>
-              <div class="item-media">
-                <i class="icon icon-form-checkbox"></i>
-              </div>
-              <div class="item-inner">
-                <div class="item-title">Service</div>
-              </div>
-            </label>
-          </li>
-
-
-
       </ul>
     </div><!--/list-block-->
-
+</div>
 </div><!--/#expCategory-->

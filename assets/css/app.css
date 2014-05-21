@@ -4877,6 +4877,9 @@ html.with-statusbar-overlay body .panel {
 #hmExpList .fa-medkit {
   background: #ff3b30;
 }
+html body {
+  overflow: scroll;
+}
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -4993,7 +4996,7 @@ body {
 }
 #hmExpList li a .item-after span {
   display: inline-block;
-  font-size: 1.15em;
+  font-size: 1.0em;
   color: #999999;
 }
 #hmExpList li a .item-after i {
