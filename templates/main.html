@@ -10,7 +10,7 @@
     <div class="center sliding"></div>
 
     <div class="right">
-      <a href="#" class="link open-panel">
+      <a href="#"  class="link open-panel" >
         <i class="ion ion-navicon pull-left"></i>
       </a>
     </div>
@@ -18,43 +18,44 @@
   </div>
 </div><!--/navbar-->
 
-
-<div id="monthInfo">
-  {{month}} {{year}}
-</div><!--/monthInfo-->
-
-
-<div id="expSumAmt">
-  <span>{{total}}</span>
-  <i class="fa fa-rupee"></i>
-</div><!--/expSumAmt-->
+<div id="pageWrapper" class=" {{pageTrans}} ">
+  <div id="monthInfo">
+    {{month}} {{year}}
+  </div><!--/monthInfo-->
 
 
+  <div id="expSumAmt">
+    <span>{{total}}</span>
+    <i class="fa fa-rupee"></i>
+  </div><!--/expSumAmt-->
 
 
-<div class="container list-block media-list"  id="hmExpList">
-  <ul>
-    <li ng-repeat="expense in list">
-      <a href="#" class="item-link item-content">
-        <div class="item-media">
-          <i class="fa {{expense.class}}"></i>
-        </div>
 
-        <div class="item-inner">
-          <div class="item-title-row">
-            <div class="item-title">{{expense.category}}</div>
-            <div class="item-after">
-              <i class="fa fa-rupee"></i>
-              <span>{{(expense.amount).toFixed(2)}}</span>
-            </div>
+
+  <div class="list-block media-list" id="hmExpList">
+    <ul>
+      <li ng-repeat="expense in list">
+        <a href="#" class="item-link item-content">
+          <div class="item-media">
+            <i class="fa {{expense.class}}"></i>
           </div>
 
-          <div class="item-subtitle">{{expense.type}}</div>
-        </div>
-      </a>
-    </li>
+          <div class="item-inner">
+            <div class="item-title-row">
+              <div class="item-title">{{expense.category}}</div>
+              <div class="item-after">
+                <i class="fa fa-rupee"></i>
+                <span>{{(expense.amount).toFixed(2)}}</span>
+              </div>
+            </div>
 
-  </ul>
-</div><!--/list-block-->
+            <div class="item-subtitle">{{expense.type}}</div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </div><!--/list-block-->
+</div><!--/pageWrapper-->
 
 

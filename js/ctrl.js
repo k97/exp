@@ -11,7 +11,7 @@ var expAppCtrl = angular.module('expAppCtrl', []);
 //-------Main Index Page Data
 expAppCtrl.controller('ExpListCtrl', ['$scope', 'ExpCall',
     function($scope, ExpCall) {
-
+        $scope.pageTrans = 'page-from-right-to-center';
         ExpCall.get(function (data){
             $scope.month = data.month;
             $scope.year = data.year;
@@ -37,6 +37,7 @@ expAppCtrl.controller('ExpListCtrl', ['$scope', 'ExpCall',
 //-------Category Data
 expAppCtrl.controller('ExpCategory', ['$scope', 'ExpCatCall',
     function($scope, ExpCatCall) {
+        $scope.pageTrans = 'page-from-right-to-center';
         ExpCatCall.get(function (data){
             console.log(data);
             $scope.category = data;
