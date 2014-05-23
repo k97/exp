@@ -18,7 +18,7 @@ expAppCtrl.controller('ExpListCtrl', ['$scope', 'ExpCall',
             $scope.list = data.expenses;
             $scope.total = totalCal();
 
-           console.log($scope.total);
+
         });
 
         function totalCal(){
@@ -28,6 +28,8 @@ expAppCtrl.controller('ExpListCtrl', ['$scope', 'ExpCall',
             }
             return totVal.toFixed(2);
         }
+
+
 
 
     }//fn

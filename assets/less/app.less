@@ -33,10 +33,50 @@ html{
 }
 
 
+
+
+#pageWrapper{
+    .ZeroMarPad;
+    position: relative;
+    top:43px;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+}//pageWrapper
+
+#offCanvas{
+    position: relative;
+}
+.offCanvasMenuOpen{
+    #offCanvas{
+        right:260px;
+    }
+    .panel{
+        display: block;
+    }
+    .navbar{
+       position: relative;
+
+    }
+}
+.offCanvasMenuClose{
+    #offCanvas{
+        right:0px;
+    }
+    .panel{
+        display: none;
+    }
+    .navbar{
+       position: fixed;
+
+    }
+}
+
 .navbar{
     position: fixed;
     background: @ios-blue;
     color:@mail3;
+    z-index: 5001;
     a{
        i,span{
         color:@mail3;
@@ -47,16 +87,6 @@ html{
         }
     }
 }
-
-#pageWrapper{
-    .ZeroMarPad;
-    position: relative;
-    top:43px;
-
-width: 100%;
-height: 100%;
-z-index: 5000;
-}//pageWrapper
 
 .panelNavigation{
     .ZeroMarPad;
